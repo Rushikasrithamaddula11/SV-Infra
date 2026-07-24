@@ -1,0 +1,61 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAdmin() {
+      return request.auth != null;
+    }
+
+    // Public content collections: anyone can read active/approved items,
+    // only signed-in admins can write.
+    match /projects/{id} {
+      allow read: if resource.data.active == true || isAdmin();
+      allow write: if isAdmin();
+    }
+    match /projectCategories/{id} {
+      allow read: if resource.data.active == true || isAdmin();
+      allow write: if isAdmin();
+    }
+    match /services/{id} {
+      allow read: if resource.data.active == true || isAdmin();
+      allow write: if isAdmin();
+    }
+    match /gallery/{id} {
+      allow read: if resource.data.active == true || isAdmin();
+      allow write: if isAdmin();
+    }
+    match /galleryCategories/{id} {
+      allow read: if resource.data.active == true || isAdmin();
+      allow write: if isAdmin();
+    }
+    match /heroSlides/{id} {
+      allow read: if resource.data.active == true || isAdmin();
+      allow write: if isAdmin();
+    }
+    match /testimonials/{id} {
+      allow read: if resource.data.status == 'approved' || isAdmin();
+      allow write: if isAdmin();
+    }
+    match /siteContent/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    match /websiteSettings/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Enquiries: anyone can submit (create), but only admins can read,
+    // update the status, or delete.
+    match /enquiries/{id} {
+      allow create: if true;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // Admin user profile docs, if used
+    match /users/{id} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+  }
+}

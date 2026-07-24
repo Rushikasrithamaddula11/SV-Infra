@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-cream text-navy font-body antialiased; }
+h1,h2,h3,h4 { @apply font-display; }
+
+.container-x { @apply max-w-7xl mx-auto px-5 sm:px-8 lg:px-10; }
+.section-pad { @apply py-16 md:py-24; }
+.eyebrow { @apply inline-flex items-center gap-2 text-gold-dark uppercase tracking-[0.2em] text-xs font-semibold; }
+.btn-primary { @apply inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-navy font-semibold px-7 py-3.5 rounded-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5; }
+.btn-outline { @apply inline-flex items-center justify-center gap-2 border border-white/40 hover:border-gold hover:text-gold text-white font-semibold px-7 py-3.5 rounded-sm transition-all duration-300 hover:-translate-y-0.5; }
+.btn-navy { @apply inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-7 py-3.5 rounded-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5; }
+.card { @apply bg-white rounded-sm shadow-card transition-all duration-300 hover:shadow-xl hover:-translate-y-1; }
+.input-field { @apply w-full border border-navy/15 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gold/60 rounded-sm transition-all; }
+.admin-shell { @apply min-h-screen bg-[#F3F4F8]; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-400 { animation-delay: 400ms; }
