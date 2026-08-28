@@ -14,6 +14,7 @@ const links = [
 
 export default function Navbar() {
   const settings = useSettings()
+  const logoUrl = settings.logoUrl || '/images/branding/sv-logo.png'
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -27,8 +28,8 @@ export default function Navbar() {
     <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? 'bg-navy shadow-lg py-2' : 'bg-navy/95 py-4'}`}>
       <div className="container-x flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          {settings.logoUrl ? (
-            <img src={settings.logoUrl} alt={settings.companyName} className="h-10 max-h-12 w-auto object-contain" />
+          {logoUrl ? (
+            <img src={logoUrl} alt={settings.companyName} className="h-10 max-h-12 w-auto object-contain" />
           ) : (
             <div className="h-10 w-10 border-2 border-gold flex items-center justify-center text-gold font-display font-bold">SV</div>
           )}

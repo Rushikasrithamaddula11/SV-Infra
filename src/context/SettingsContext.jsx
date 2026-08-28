@@ -5,9 +5,9 @@ import { db } from '../firebase/config'
 // websiteSettings/main holds all the global, site-wide fields an admin can
 // edit (company name, logo, phones, addresses, socials, homepage sections).
 const DEFAULT_SETTINGS = {
-  companyName: 'SV INFRA PROJECTS',
+  companyName: 'SV INFRA PROJECTS 972',
   tagline: 'Building Excellence with Quality & Trust',
-  logoUrl: '',
+  logoUrl: '/images/branding/sv-logo.png',
   faviconUrl: '',
   primaryPhone: '+91 95159 88011',
   secondaryPhone: '+91 88011 85559',
@@ -17,7 +17,7 @@ const DEFAULT_SETTINGS = {
   tsAddress: "9-1-1 to 3, Brundavan Studio, ISKCON Compound, St. John's Road, Secunderabad, Telangana",
   mapUrl: '',
   footerDescription: 'Professional ACP Cladding, Structural Glazing, Toughened Glass, Aluminium and Interior Solutions for Commercial & Residential Projects.',
-  copyrightText: `© ${new Date().getFullYear()} SV Infra Projects. All rights reserved.`,
+  copyrightText: `© ${new Date().getFullYear()} SV Infra projects 972. All rights reserved.`,
   social: { facebook: '', instagram: '', youtube: '', linkedin: '' },
   homepageSections: {
     hero: { enabled: true, order: 1 },
@@ -29,7 +29,7 @@ const DEFAULT_SETTINGS = {
     testimonials: { enabled: true, order: 7, heading: 'Client Testimonials', subheading: 'What They Say' },
     contactCta: { enabled: true, order: 8 },
   },
-  seo: { title: 'SV Infra Projects | Building Excellence with Quality & Trust', description: '', keywords: '', ogImage: '' },
+  seo: { title: 'SV Infra projects 972 | Building Excellence with Quality & Trust', description: '', keywords: '', ogImage: '' },
 }
 
 const SettingsContext = createContext(DEFAULT_SETTINGS)

@@ -7,7 +7,7 @@ import { doc, setDoc } from 'firebase/firestore'
 import { db } from '../firebase/config'
 
 const DEFAULTS = {
-  intro: 'SV Infra Projects provides professional architectural, construction finishing and interior solutions for commercial and residential projects.',
+  intro: 'SV Infra projects 972 provides professional architectural, construction finishing and interior solutions for commercial and residential projects.',
   vision: 'To be a leading name in premium construction finishing and façade engineering.',
   mission: 'To deliver every project with uncompromising quality, on-time execution and premium materials.',
   whyChooseUs: ['Quality Work', 'Timely Delivery', 'Professional Execution', 'Customer Satisfaction', 'Experienced Team', 'Premium Materials'],

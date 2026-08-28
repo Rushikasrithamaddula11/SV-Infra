@@ -44,7 +44,7 @@ export default function Dashboard() {
         <StatCard icon={MailOpen} label="New Enquiries" value={stats.newEnquiries} to="/admin/enquiries" />
       </div>
       <div className="mt-8 card p-6 text-sm text-navy/60">
-        Welcome to the SV Infra Projects admin panel. Use the sidebar to manage projects, services, gallery, hero slider,
+        Welcome to the SV Infra projects 972 admin panel. Use the sidebar to manage projects, services, gallery, hero slider,
         testimonials, enquiries and every other part of the public website — no code changes required.
       </div>
     </AdminLayout>

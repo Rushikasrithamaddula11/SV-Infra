@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom'
 import { ArrowUpRight, Layers } from 'lucide-react'
 
 export default function ServiceCard({ service }) {
+  const coverImage = service.coverImage || service.image
+
   return (
     <Link to={`/services/${service.slug}`} className="group card overflow-hidden block">
       <div className="relative h-56 overflow-hidden">
-        {service.coverImage ? (
-          <img src={service.coverImage} alt={service.name}
+        {coverImage ? (
+          <img src={coverImage} alt={service.name}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
         ) : (
           <div className="w-full h-full bg-navy-light flex items-center justify-center text-white/40">

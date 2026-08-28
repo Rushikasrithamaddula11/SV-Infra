@@ -6,7 +6,7 @@ import { subscribeAll, listAll, createDoc, updateDocById, deleteDocById, slugify
 import { deleteUploadedImage } from '../utils/storageUpload'
 
 const emptyForm = {
-  name: '', categoryId: '', location: '', clientName: '', completionDate: '',
+  name: '', categoryId: '', location: '', district: '', state: '', address: '', clientName: '', completionDate: '',
   shortDescription: '', fullDescription: '', featured: false, active: true, order: 1,
   seoTitle: '', seoDescription: '',
 }
@@ -87,6 +87,7 @@ export default function ProjectsManager() {
   const onEdit = (item) => {
     setForm({
       name: item.name, categoryId: item.categoryId || '', location: item.location || '',
+      district: item.district || '', state: item.state || '', address: item.address || '',
       clientName: item.clientName || '', completionDate: item.completionDate || '',
       shortDescription: item.shortDescription || '', fullDescription: item.fullDescription || '',
       featured: !!item.featured, active: item.active, order: item.order || 1,
@@ -151,6 +152,11 @@ export default function ProjectsManager() {
           </div>
           <form onSubmit={onSubmit} className="grid sm:grid-cols-2 gap-4">
             <input className="input-field" placeholder="Project Name *" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required />
+
+            <input className="input-field" placeholder="Location / Area" value={form.location} onChange={(e) => setForm({ ...form, location: e.target.value })} />
+            <input className="input-field" placeholder="District" value={form.district} onChange={(e) => setForm({ ...form, district: e.target.value })} />
+            <input className="input-field" placeholder="State" value={form.state} onChange={(e) => setForm({ ...form, state: e.target.value })} />
+            <input className="input-field sm:col-span-2" placeholder="Full Address" value={form.address} onChange={(e) => setForm({ ...form, address: e.target.value })} />
 
             <div className="space-y-2">
               <select

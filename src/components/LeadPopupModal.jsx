@@ -88,7 +88,7 @@ export default function LeadPopupModal({ services = [] }) {
             <Sparkles size={140} className="text-gold" />
           </div>
           <div className="relative z-10">
-            <p className="eyebrow text-gold font-bold">Welcome to SV Infra Projects</p>
+            <p className="eyebrow text-gold font-bold">Welcome to SV Infra projects 972</p>
             <h3 className="text-2xl font-bold mt-1">Get a Free Project Consultation</h3>
             <p className="text-xs text-white/70 mt-1">Submit your details & our expert team will contact you shortly.</p>
           </div>

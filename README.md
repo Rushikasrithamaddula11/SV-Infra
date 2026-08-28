@@ -1,6 +1,6 @@
-# SV Infra Projects — Website + Admin CMS
+# SV Infra projects 972 — Website + Admin CMS
 
-A full, dynamic business website and admin dashboard for **SV Infra Projects**
+A full, dynamic business website and admin dashboard for **SV Infra projects 972**
 (ACP cladding, structural glazing, aluminium, interiors, commercial & residential
 construction finishing), built with React + Vite + Tailwind CSS on the frontend
 and Firebase (Auth, Firestore, Storage) on the backend.

@@ -30,14 +30,15 @@ export default function ServiceDetail() {
   )
 
   const images = service.images || []
+  const coverImage = service.coverImage || service.image
 
   return (
     <div>
       <Helmet><title>{service.seoTitle || service.name} | {settings.companyName}</title></Helmet>
 
       <div className="relative h-[50vh] min-h-[380px] bg-navy">
-        {service.coverImage && (
-          <img src={service.coverImage} alt={service.name} className="absolute inset-0 w-full h-full object-cover opacity-50" />
+        {coverImage && (
+          <img src={coverImage} alt={service.name} className="absolute inset-0 w-full h-full object-cover opacity-50" />
         )}
         <div className="relative container-x h-full flex flex-col justify-end pb-10 text-white">
           <Link to="/services" className="inline-flex items-center gap-2 text-gold text-sm mb-4 w-fit"><ArrowLeft size={16} /> Back to Services</Link>

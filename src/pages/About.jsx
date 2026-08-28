@@ -5,7 +5,7 @@ import { getOne } from '../utils/firestore'
 import { useSettings } from '../context/SettingsContext'
 
 const DEFAULT_ABOUT = {
-  intro: 'SV Infra Projects provides professional architectural, construction finishing and interior solutions for commercial and residential projects. We specialize in modern façade systems, glazing, aluminium works, interior solutions and customized construction finishing services.',
+  intro: 'SV Infra projects 972 provides professional architectural, construction finishing and interior solutions for commercial and residential projects. We specialize in modern façade systems, glazing, aluminium works, interior solutions and customized construction finishing services.',
   vision: 'To be a leading name in premium construction finishing and façade engineering, recognized for craftsmanship, innovation and reliability across Andhra Pradesh, Telangana and beyond.',
   mission: 'To deliver every project — commercial or residential — with uncompromising quality, on-time execution and materials that stand the test of time, while building lasting relationships with our clients.',
   whyChooseUs: ['Quality Work', 'Timely Delivery', 'Professional Execution', 'Customer Satisfaction', 'Experienced Team', 'Premium Materials'],
@@ -29,7 +29,7 @@ export default function About() {
 
       <section className="bg-navy text-white py-24 mt-0">
         <div className="container-x">
-          <p className="eyebrow">About SV Infra Projects</p>
+          <p className="eyebrow">About SV Infra projects 972</p>
           <h1 className="text-4xl sm:text-5xl font-bold mt-3">{settings.companyName}</h1>
           <p className="text-gold mt-2 text-lg">{settings.tagline}</p>
         </div>
@@ -38,7 +38,7 @@ export default function About() {
       <section className="section-pad bg-white">
         <div className="container-x grid md:grid-cols-2 gap-14 items-center">
           <div className="h-96 rounded-sm overflow-hidden bg-navy-light">
-            {content.heroImage && <img src={content.heroImage} alt="SV Infra Projects" className="w-full h-full object-cover" />}
+            {content.heroImage && <img src={content.heroImage} alt="SV Infra projects 972" className="w-full h-full object-cover" />}
           </div>
           <div>
             <p className="eyebrow">Company Introduction</p>

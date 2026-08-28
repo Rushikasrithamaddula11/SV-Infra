@@ -105,7 +105,7 @@ export default function Home() {
               <p className="eyebrow">{sections.about?.subheading || 'Who We Are'}</p>
               <h2 className="text-3xl sm:text-4xl font-bold mt-3">{sections.about?.heading || 'About Us'}</h2>
               <p className="mt-6 text-navy/70 leading-relaxed">
-                SV Infra Projects provides professional architectural, construction finishing and interior solutions
+                SV Infra projects 972 provides professional architectural, construction finishing and interior solutions
                 for commercial and residential projects. We specialize in modern façade systems, glazing, aluminium
                 works, interior solutions and customized construction finishing services.
               </p>

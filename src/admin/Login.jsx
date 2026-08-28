@@ -38,7 +38,7 @@ export default function Login() {
       <div className="bg-white w-full max-w-sm p-8 rounded-sm shadow-xl">
         <div className="text-center mb-8">
           <div className="h-12 w-12 mx-auto border-2 border-gold flex items-center justify-center text-gold font-display font-bold">SV</div>
-          <p className="font-display font-bold text-lg text-navy mt-3">SV Infra Projects</p>
+          <p className="font-display font-bold text-lg text-navy mt-3">SV Infra projects 972</p>
           <p className="text-xs text-navy/50 uppercase tracking-wide">
             {isRegistering ? 'Create Admin Account' : 'Admin Login'}
           </p>

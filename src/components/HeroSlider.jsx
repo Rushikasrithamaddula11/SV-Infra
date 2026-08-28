@@ -15,7 +15,7 @@ export default function HeroSlider({ slides = [] }) {
     return (
       <div className="relative h-[85vh] min-h-[560px] bg-navy flex items-center overflow-hidden">
         <div className="container-x relative z-10 text-white animate-fade-in-up">
-          <p className="eyebrow text-gold font-bold tracking-widest">SV Infra Projects</p>
+          <p className="eyebrow text-gold font-bold tracking-widest">SV Infra projects 972</p>
           <h1 className="text-4xl sm:text-6xl font-bold mt-4 leading-tight">
             Building Excellence<br /><span className="text-gold">with Quality &amp; Trust</span>
           </h1>
@@ -59,7 +59,7 @@ export default function HeroSlider({ slides = [] }) {
 
       <div className="relative z-20 h-full flex items-center">
         <div key={index} className="container-x text-white animate-fade-in-up">
-          <p className="eyebrow text-gold font-bold tracking-widest">SV Infra Projects</p>
+          <p className="eyebrow text-gold font-bold tracking-widest">SV Infra projects 972</p>
           <h1 className="text-4xl sm:text-6xl font-bold mt-4 leading-tight max-w-3xl drop-shadow-md">
             {slideTitle}
           </h1>
