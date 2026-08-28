@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SV Infra projects 972 — Website + Admin CMS
 
 A full, dynamic business website and admin dashboard for **SV Infra projects 972**
@@ -133,3 +134,6 @@ firebase deploy --only hosting
 - All list pages (Projects, Gallery) build their category filters dynamically
   from Firestore — creating a new category makes it appear on the site with
   no code changes.
+=======
+# SV-Infra
+>>>>>>> f5be69f1e13a9ab8ac8e7e0216cad01a98571962
